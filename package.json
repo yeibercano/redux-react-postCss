@@ -1,8 +1,6 @@
-
-
 {
-  "name": "react-tutorials",
-  "version": "0.0.0",
+  "name": "redux-react-postCss",
+  "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
   "dependencies": {
@@ -20,11 +18,19 @@
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.1"
   },
-  "devDependencies": {},
   "scripts": {
     "dev": "./node_modules/.bin/webpack-dev-server --content-base src --inline --hot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeibercano/redux-react-postCss.git"
+  },
+  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yeibercano/redux-react-postCss/issues"
+  },
+  "homepage": "https://github.com/yeibercano/redux-react-postCss#readme"
 }
