@@ -1,2 +1,9 @@
-	node_modules
-	npm-debug.log
+# Dependency directories
+node_modules
+jspm_packages
+build
+
+# Logs
+logs
+*.log
+npm-debug.log*
