@@ -31,4 +31,4 @@ store.subscribe(() => {
 
 store.dispatch({type: "CHANGE_NAME", payload: "Will"})
 store.dispatch({type: "CHANGE_AGE", payload: 35})
-store.dispatch({type: "CHANGE_AGE", payload: 36})
+store.dispatch({type: "CHANGE_AGE", payload: 28})
