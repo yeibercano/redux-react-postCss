@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { getChangeName } from '../actions'
+import { getChangeName, getChangeAge } from '../actions'
 
 let ChangeName = ({ dispatch }) => {
   let input
@@ -25,6 +25,6 @@ let ChangeName = ({ dispatch }) => {
     </div>
   )
 }
-AddTodo = connect()(ChangeName)
+ChangeName = connect()(ChangeName)
 
 export default ChangeName
