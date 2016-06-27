@@ -1,13 +1,15 @@
 import * as types from '../constants/ActionTypes'
 
-export function getChangeName() {
+export function getChangeName(payload) {
   return {
     type: types.CHANGE_NAME,
+    payload: payload
   }
 }
 
-export function getChangeAge() {
+export function getChangeAge(payload) {
   return {
     type: types.CHANGE_AGE,
+    payload: payload
   }
 }
