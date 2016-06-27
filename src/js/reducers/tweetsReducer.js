@@ -1,3 +1,3 @@
-const tweetsReducer = (state=[], action) => {
+export const tweetsReducer = (state=[], action) => {
   return state;
 };
