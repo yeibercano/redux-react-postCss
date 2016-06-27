@@ -16,6 +16,8 @@
     "postcss-loader": "^0.9.1",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.5.1",
     "redux": "^3.5.2",
     "style-loader": "^0.13.1",
     "webpack": "^1.12.9",
@@ -35,5 +37,8 @@
   "bugs": {
     "url": "https://github.com/yeibercano/redux-react-postCss/issues"
   },
-  "homepage": "https://github.com/yeibercano/redux-react-postCss#readme"
+  "homepage": "https://github.com/yeibercano/redux-react-postCss#readme",
+  "devDependencies": {
+    "redux-logger": "^2.6.1"
+  }
 }
