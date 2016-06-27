@@ -1,12 +1,32 @@
-import { reducers } from './reducers/reducers.js';
+import React from 'react'
+import { render } from 'react-dom'
 import { createStore } from "redux";
+import { Provider } from 'react-redux';
+import logger from 'redux-logger'
+import { browserHistory } from 'react-router'
+
+import { reducers } from './reducers/reducers.js';
+import App from './containers/App.js';
 
 const store = createStore(reducers);
+const history = browserHistory
+
+render(
+  <Provider store={store} history={history}>
+    <App />
+  </Provider>,
+  document.getElementById('app')
+)
 
 store.subscribe(() => {
   console.log("store changed", store.getState())
 })
 
-store.dispatch({type: "CHANGE_NAME", payload: "Will"})
-store.dispatch({type: "CHANGE_AGE", payload: 38})
-store.dispatch({type: "CHANGE_MESSAGE", payload: 'love it'})
+// store.dispatch({type: "CHANGE_NAME", payload: "Will"})
+// store.dispatch({type: "CHANGE_AGE", payload: 49})
+// store.dispatch({type: "CHANGE_MESSAGE", payload: 'love it'})
+
+// render(
+//   <Root store={store} history={history}/>, 
+//   document.getElementById('app')
+// )
