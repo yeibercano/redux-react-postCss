@@ -13,3 +13,10 @@ export function getChangeAge(payload) {
     payload: payload
   }
 }
+
+export function getChangeMessage(payload) {
+  return {
+    type: types.CHANGE_MESSAGE,
+    payload: payload
+  }
+}
