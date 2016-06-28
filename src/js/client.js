@@ -8,6 +8,8 @@ import { browserHistory } from 'react-router'
 import { reducers } from './reducers/reducers.js';
 import App from './containers/App.js';
 
+import styles from '../styles/main.css'
+
 const store = createStore(reducers);
 const history = browserHistory
 
@@ -22,11 +24,3 @@ store.subscribe(() => {
   console.log("store changed", store.getState())
 })
 
-// store.dispatch({type: "CHANGE_NAME", payload: "Will"})
-// store.dispatch({type: "CHANGE_AGE", payload: 49})
-// store.dispatch({type: "CHANGE_MESSAGE", payload: 'love it'})
-
-// render(
-//   <Root store={store} history={history}/>, 
-//   document.getElementById('app')
-// )
