@@ -53,9 +53,10 @@ module.exports = {
     ]
   },
   postcss: [
-    require('postcss-animation'),
-    require('postcss-color-rebeccapurple'),
-    require('autoprefixer'),
+    // require('postcss-animation'),
+    require('precss'),
+    require('postcss-cssnext')
+    // require('autoprefixer'),
   ],
   plugins: [
     new ExtractTextPlugin('/styles/styles.css'),
