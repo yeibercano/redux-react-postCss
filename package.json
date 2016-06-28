@@ -30,6 +30,7 @@
     "postcss-color-rebeccapurple": "^2.0.0",
     "postcss-cssnext": "^2.7.0",
     "postcss-loader": "^0.9.1",
+    "postcss-scss": "^0.1.8",
     "precss": "^1.4.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.12.9",
