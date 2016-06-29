@@ -6,7 +6,7 @@ let ChangeName = ({ dispatch }) => {
   let input
 
   return (
-    <div>
+    <main className="container">
       <form onSubmit={e => {
         e.preventDefault()
         if (!input.value.trim()) {
@@ -22,7 +22,7 @@ let ChangeName = ({ dispatch }) => {
           Change Name
         </button>
       </form>
-    </div>
+    </main>
   )
 }
 ChangeName = connect()(ChangeName)
