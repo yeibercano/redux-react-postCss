@@ -7,6 +7,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+const precss = require('precss'),
+      cssnext = require('postcss-cssnext'),
+      postcssImport = require('postcss-import');
+
 const PATHS = {
   app: path.join(__dirname, 'src/js/client.js'),
   styles: path.join(__dirname, 'src/styles/main.css'),
@@ -47,17 +51,29 @@ module.exports = {
          // loader:  ExtractTextPlugin.extract('style-loader', 'css-loader'),  
         // include: __dirname + '/src',
         // loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader'),
-         loader: ExtractTextPlugin.extract('style-loader', ['css-loader', 'postcss-loader']),
+         // loader: ExtractTextPlugin.extract('style-loader', ['css-loader', 'postcss-loader']),
+         loader: ExtractTextPlugin.extract("style-loader",  "css-loader?modules&importLoaders=1!postcss-loader"),
+
         include: __dirname + '/src/styles',
       },
     ]
   },
-  postcss: [
-    // require('postcss-animation'),
-    require('precss'),
-    require('postcss-cssnext')
-    // require('autoprefixer'),
-  ],
+  // postcss: [
+  //   // require('postcss-animation'),
+  //   require('precss'),
+  //   require('')
+  //   require('postcss-cssnext'),
+  //   // require('autoprefixer'),
+  // ],
+   postcss: function (webpack) {
+        return [ 
+          postcssImport({
+              addDependencyTo: webpack
+          }),
+          precss,
+          cssnext
+        ];
+    },
   plugins: [
     new ExtractTextPlugin('/styles/styles.css'),
     new HtmlWebpackPlugin({
