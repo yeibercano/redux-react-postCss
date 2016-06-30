@@ -1,3 +1,9 @@
+:root {
+  --mainColor: rebeccapurple;
+   --fontSize: 1rem;
+}
+
 header {
 	background-color: var(--mainColor) ;
 }
+
