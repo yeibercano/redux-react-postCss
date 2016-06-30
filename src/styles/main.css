@@ -1,6 +1,10 @@
-:root {
-  --mainColor: rebeccapurple;
-   --fontSize: 1rem;
+@import "_header"
+
+.container {
+  margin: 0px auto;
+  width: 80%; 
+  background-color: var(--mainColor) ;
+  font-size: calc(var(--fontSize) * 1);
 }
 
 a {
@@ -8,20 +12,30 @@ a {
 }
 
 #app {
-	margin: 0px auto;
-	width: 80%;
-	background-color: var(--mainColor) ;
-	font-size: calc(var(--fontSize) * 1);
-	overflow-wrap: break-word;
+  width: 100%;
 }
 
-/* see the results */
+
+
+
+/* FOOTER */
+footer {
+  background-color: var(--mainColor);
+  color:blue; 
+}
+
+
 a {
   all: initial;
 }
 
+
+/* see the results */
+/*a {
+  all: initial;
+}
+
 @media (width >= 500px)  {
-  /* your styles */
   #app { font-size: calc(var(--fontSize) * 6);}
   h1 {
   font-size: calc(var(--fontSize) * 6);
@@ -47,10 +61,10 @@ h1 {
 
 .blur {
 filter: blur(4px);
-}
+}*/
 
 /* PRECSS */
-.heading {
+/*.heading {
     margin: 20px;
     padding: @margin;
 }
@@ -67,3 +81,4 @@ filter: blur(4px);
 @for $i from 1 to 3 {
     .b-$i { width: $(i)px; }
 }
+*/
