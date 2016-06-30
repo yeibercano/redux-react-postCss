@@ -29,6 +29,7 @@
     "postcss-animation": "0.0.11",
     "postcss-color-rebeccapurple": "^2.0.0",
     "postcss-cssnext": "^2.7.0",
+    "postcss-import": "^8.1.2",
     "postcss-loader": "^0.9.1",
     "postcss-scss": "^0.1.8",
     "precss": "^1.4.0",
