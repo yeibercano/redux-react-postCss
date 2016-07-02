@@ -1,8 +1,11 @@
+:root {
+  --mainColor: rebeccapurple;
+   --fontSize: 1rem;
+}
 
 .container {
   margin: 0px auto;
   width: 80%; 
-  background-color: var(--mainColor) ;
   font-size: calc(var(--fontSize) * 1);
 }
 
@@ -10,20 +13,16 @@ a {
   color: var(--mainColor);
 }
 
+/*a {
+  all: initial;
+}*/
+
 #app {
   width: 100%;
   color: white;
 }
 
-a {
-  all: initial;
-}
-
 /* PRECSS */
-:root {
-  --mainColor: rebeccapurple;
-   --fontSize: 1rem;
-}
 
 .parent {
     background: white;
