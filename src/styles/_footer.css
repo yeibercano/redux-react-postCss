@@ -1,0 +1,5 @@
+/* FOOTER */
+footer {
+  background-color: var(--mainColor);
+  color: color(red blackness(80%));; 
+}
