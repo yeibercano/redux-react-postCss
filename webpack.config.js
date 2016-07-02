@@ -7,9 +7,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-const precss = require('precss'),
-      cssnext = require('postcss-cssnext'),
-      postcssImport = require('postcss-import');
+const postcssImport = require('postcss-import'),
+      precss = require('precss'),
+      cssnext = require('postcss-cssnext');
 
 const PATHS = {
   app: path.join(__dirname, 'src/js/client.js'),
@@ -19,7 +19,7 @@ const PATHS = {
 
 module.exports = {
   // context: path.join(__dirname, "src"),
-  devtool: debug ? "inline-sourcemap" : null,
+  // devtool: debug ? "inline-sourcemap" : null,
   entry: {
     app: PATHS.app,
     styles: [ PATHS.styles ]
@@ -51,8 +51,8 @@ module.exports = {
          // loader:  ExtractTextPlugin.extract('style-loader', 'css-loader'),  
         // include: __dirname + '/src',
         // loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader'),
-         // loader: ExtractTextPlugin.extract('style-loader', ['css-loader', 'postcss-loader']),
-         loader: ExtractTextPlugin.extract("style-loader",  "css-loader?modules&importLoaders=1!postcss-loader"),
+         loader: ExtractTextPlugin.extract('style-loader', ['css-loader', 'postcss-loader']),
+         // loader: ExtractTextPlugin.extract("style-loader",  "css-loader?modules&importLoaders=1!postcss-loader"),
 
         include: __dirname + '/src/styles',
       },
