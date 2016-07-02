@@ -1,20 +1,28 @@
 {
 	"data": [
-		{ 
+	  { 
 			"id": "1",
-			"filename": "malala.jpg",
-			"vote": "0",
-			"title": "Malala"
+			"fileattributes": {
+			  "filename": "malala.jpg",
+			  "title": "Malala"
+			  "vote": "0",
+			}
 		},
-		{"id": "2",
-			"filename": "almostHoly.jpg",
-			"vote": "0",
-			"title": "Almost Holy"
+		{
+			"id": "2",
+			"fileattributes": {
+				"filename": "almostHoly.jpg",
+			  "title": "Almost Holy"
+			  "vote": "0",
+			}
 		},
-		{"id": "3",
-			"filename": "tickled.jpg",
-			"vote": "0",
-			"title": "Tickled"
+		{
+			"id": "3", 
+			"fileattributes": {
+				"filename": "tickled.jpg",
+			  "title": "Tickled"
+			  "vote": "0",
+			}
 		}
 	]
 }
