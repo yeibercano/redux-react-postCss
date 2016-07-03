@@ -1,3 +1,2 @@
-export const CHANGE_NAME = 'CHANGE_NAME',
-             CHANGE_AGE =  'CHANGE_AGE',
-             CHANGE_MESSAGE = 'CHANGE_MESSAGE';
+export const RECEIVE_PHOTOS = 'RECEIVE_PHOTOS',
+			 UP_VOTE        = 'UP_VOTE';
