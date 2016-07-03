@@ -1,22 +1,22 @@
 import * as types from '../constants/ActionTypes'
+import axios from 'axios';
 
-export function getChangeName(payload) {
+export function receivePhotos (payload) {
   return {
-    type: types.CHANGE_NAME,
-    payload: payload
+    type: types.RECEIVE_PHOTOS,
+    payload
   }
 }
 
-export function getChangeAge(payload) {
-  return {
-    type: types.CHANGE_AGE,
-    payload: payload
+export function getPhotos() {
+  return dispatch => {
+    axios.get("/photos")
+    .then( response => dispatch(receivePhotos(response.data.data)));
   }
 }
-
-export function getChangeMessage(payload) {
+export function upVote (payload) {
   return {
-    type: types.CHANGE_MESSAGE,
-    payload: payload
+    type: types.UP_VOTE,
+    payload
   }
 }
