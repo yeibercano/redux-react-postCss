@@ -5,8 +5,8 @@ import { Provider } from 'react-redux';
 import logger from 'redux-logger'
 import { browserHistory } from 'react-router'
 
-import { reducers } from './reducers/reducers.js';
-import App from './containers/App.js';
+import { reducers } from './reducers/reducers';
+import App from './containers/Main.jsx';
 
 import styles from '../styles/main.css'
 
