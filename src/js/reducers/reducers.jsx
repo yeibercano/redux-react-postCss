@@ -1,9 +1,24 @@
-import { combineReducers } from 'redux';
+// import { combineReducers } from 'redux';
+// import userReducer from './userReducer';
+// import tweetsReducer from './tweetsReducer';
 
-import { userReducer } from './userReducer.js';
-import { tweetsReducer } from './tweetsReducer.js';
+//  const reducers = combineReducers({
+//   user: userReducer,
+//   tweets: tweetsReducer
+// })
 
-export const reducers = combineReducers({
-  user: userReducer,
-  tweets: tweetsReducer,
-})
+// export default reducers
+
+export const reducers = (state={}, action) => {
+  switch(action.type) {
+    case "CHANGE_NAME": {
+      state = {...state, name: action.payload}
+      break;
+    }
+    case "CHANGE_AGE": {
+      state = {...state, age: action.payload}
+      break;
+    }
+  }
+  return state;
+};
