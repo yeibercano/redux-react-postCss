@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import * as appActions from '../actions/index';
-import MainApp from '../components/MainApp';
+import MainApp from './MainApp.js';
 
 
 
