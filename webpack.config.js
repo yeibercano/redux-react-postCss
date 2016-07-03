@@ -12,7 +12,7 @@ const postcssImport = require('postcss-import'),
       cssnext = require('postcss-cssnext');
 
 const PATHS = {
-  app: path.join(__dirname, 'src/js/client.js'),
+  app: path.join(__dirname, 'src/js/client.jsx'),
   styles: path.join(__dirname, 'src/styles/main.css'),
   build: path.join(__dirname, 'public')
 };
