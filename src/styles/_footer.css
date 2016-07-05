@@ -1,6 +1,8 @@
-/* FOOTER */
 footer {
-  background-color: var(--mainColor);
-  /*color: color(red blackness(80%));; */
-  color: white;
+    background-color: var(--mainColor);
+    text-align: center;
+    padding: 10px;
+    /*height: $footer-height;*/
+    /*position: fixed;*/
+    width: 100%;   
 }
