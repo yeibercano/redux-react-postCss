@@ -10,7 +10,7 @@ export function receivePhotos (payload) {
 
 export function getPhotos() {
   return dispatch => {
-    axios.get("/photos")
+    axios.get("/api/images.json")
     .then( response => dispatch(receivePhotos(response.data.data)));
   }
 }
