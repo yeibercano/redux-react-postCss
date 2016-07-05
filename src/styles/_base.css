@@ -3,6 +3,11 @@
    --fontSize: 1rem;
 }
 
+/*html {
+  color: black;
+}*/
+
+
 .container {
   margin: 0px auto;
   width: 80%; 
@@ -19,7 +24,7 @@ a {
 
 #app {
   width: 100%;
-  color: white;
+  color: black;
 }
 
 /* PRECSS */
