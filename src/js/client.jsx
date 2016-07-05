@@ -1,26 +1,27 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { createStore } from "redux";
+
+import thunkMiddleware from 'redux-thunk';
+import { createStore, applyMiddleware } from "redux";
 import { Provider } from 'react-redux';
-import logger from 'redux-logger'
+
+import createLogger from 'redux-logger'
 import { browserHistory } from 'react-router'
 
-import { reducers } from './reducers/reducers';
+import appState from './reducers/reducers';
 import App from './containers/Main.jsx';
 
-import styles from '../styles/main.css'
 
-const store = createStore(reducers);
+const logger = createLogger();
+
+const middlewareStore = applyMiddleware(thunkMiddleware, logger)(createStore);
+export const store = middlewareStore(appState);
+
 const history = browserHistory
 
 render(
-  <Provider store={store} history={history}>
+  <Provider store={store} >
     <App />
   </Provider>,
   document.getElementById('app')
 )
-
-store.subscribe(() => {
-  console.log("store changed", store.getState())
-})
-
