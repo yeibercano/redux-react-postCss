@@ -75,7 +75,7 @@ module.exports = {
         ];
     },
   plugins: [
-    new ExtractTextPlugin('/styles/styles.css'),
+    new ExtractTextPlugin('/styles/[name].css'),
     new HtmlWebpackPlugin({
       title: 'Postcss',
       filename: 'index.html',
