@@ -4,8 +4,48 @@ header {
 	background-color: var(--mainColor) ;
 }
 
-.heading {
+/*.heading {
     margin: 20px;
     padding: @margin;
 }
 
+.header {
+    background-color: #583378;
+    padding: 10px 0px;
+}*/
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--mainColor);
+/*    padding: 10px;
+    margin-top: 10PX;*/
+}
+.brand {
+    font-size: calc(16px + 15 * ((100vw - 420px) / 860));
+}
+/* NAVIGATION */
+nav {
+    display: flex;
+    align-items: baseline;
+    flex-grow: 1;
+    font-size: calc(16px + 1 * ((100vw - 420px) / 860));
+}
+nav a {
+   text-decoration: none;
+   color: white;
+}
+nav a:hover {
+   text-decoration: underline;
+   color: white;
+}
+nav ul {
+    display: inline-flex;
+    height: 50px;
+    align-items: center;
+}
+
+nav ul li {
+    padding-left: 20px;
+}
