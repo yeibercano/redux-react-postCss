@@ -12,6 +12,7 @@ export default class Photos extends React.Component {
           <img className='photo-list-images' src={'../images/' + imageInfo.filename} /> 
         </a>
         <Voting imageInfo = {imageInfo} imageId={id} />
+        <p>{imageInfo.synopsis}</p>
       </article>
       // make this into photo-items component that renders the voting as well.
       // the login comes from main
