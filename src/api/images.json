@@ -5,7 +5,8 @@
 			"fileattributes": {
 			  "filename": "malala.jpg",
 			  "title": "Malala",
-			  "vote": "0"
+			  "vote": "0",
+			  "synopsis": "Journalist David Farrier stumbles upon a mysterious tickling competition online. As he delves deeper he comes up against fierce resistance, but that doesnt stop him getting to the bottom of a story stranger than fiction."
 			}
 		},
 		{
@@ -13,7 +14,8 @@
 			"fileattributes": {
 				"filename": "almostHoly.jpg",
 			  "title": "Almost Holy",
-			  "vote": "0"
+			  "vote": "0",
+			  "synopsis": " A look at the events leading up to the Taliban's attack on Pakistani schoolgirl, Malala Yousafzai, for speaking out on girls' education followed by the aftermath, including her speech to the United Nations."
 			}
 		},
 		{
@@ -21,7 +23,8 @@
 			"fileattributes": {
 				"filename": "tickled.jpg",
 			  "title": "Tickled",
-			  "vote": "0"
+			  "vote": "0",
+			  "synopsis": " Gennadiy calls himself 'Pastor Crocodile.' He's known throughout Ukraine for his years working to rehabilitate drug-addicted kids. But he's also a vigilante who uses any force necessary to carry out his moral vision."
 			}
 		}
 	]
