@@ -1,24 +1,12 @@
-// import { combineReducers } from 'redux';
-// import userReducer from './userReducer';
-// import tweetsReducer from './tweetsReducer';
+import * as types from '../constants/ActionTypes'
 
-//  const reducers = combineReducers({
-//   user: userReducer,
-//   tweets: tweetsReducer
-// })
-
-// export default reducers
-
-export const reducers = (state={}, action) => {
-  switch(action.type) {
-    case "CHANGE_NAME": {
-      state = {...state, name: action.payload}
-      break;
+export default function appState (state = { list:[] }, action) {
+  switch (action.type) {
+    case types.RECEIVE_PHOTOS: {
+      state = { ...state, 
+          list: action.payload }
     }
-    case "CHANGE_AGE": {
-      state = {...state, age: action.payload}
-      break;
-    }
+    default:
+      return state;
   }
-  return state;
-};
+}
