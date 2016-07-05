@@ -1,11 +1,67 @@
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+html {
+    background: white;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    line-height: 1;
+    font-size: calc(16px + 3 * ((100vw - 420px) / 860));
+     display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main {
+    flex: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+
 :root {
   --mainColor: rebeccapurple;
    --fontSize: 1rem;
 }
-
-/*html {
-  color: black;
-}*/
 
 
 .container {
@@ -26,53 +82,3 @@ a {
   width: 100%;
   color: black;
 }
-
-/* PRECSS */
-
-.parent {
-    background: white;
-
-    @at-root{
-        .child {
-            background: black;
-        }
-    }
-}
-@for $i from 1 to 3 {
-    .b-$i { width: $(i)px; }
-}
-
-
-/* see the results */
-/*a {
-  all: initial;
-}
-
-@media (width >= 500px)  {
-  #app { font-size: calc(var(--fontSize) * 6);}
-  h1 {
-  font-size: calc(var(--fontSize) * 6);
-}
-
-}
-
-h1 {
-  font-size: calc(var(--fontSize) * 2);
-}
-
-@media (min-width: 30em) {
-    background-color: yellow;
-  }
-
-.footer {
-	text-align: center;
-    font-size: calc(var(--fontSize) * 5);
-    color: color(red a(10%));
-    filter: sepia(.8);
-
-}
-
-.blur {
-filter: blur(4px);
-}*/
-
