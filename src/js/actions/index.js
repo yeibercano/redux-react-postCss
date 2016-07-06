@@ -14,9 +14,9 @@ export function getPhotos() {
     .then( response => dispatch(receivePhotos(response.data.data)));
   }
 }
-export function upVote (payload) {
+export function upVote (id) {
   return {
     type: types.UP_VOTE,
-    payload
+    id
   }
 }
