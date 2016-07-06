@@ -1,27 +1,26 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
 import { getPhotos, upVote } from '../actions/index'
 
 
-class Voting extends React.Component {
-  render() {
-    return (
+const Voting = ({ imageInfo, imageId }) => (
+     
+
       <section>
         <aside>
           <button onClick = { e => {
              e.preventDefault()
-             console.log('clicked',this.props.imageId)
-             upVote(this.props.imageId)
+             console.log('clicked id number: ', imageId)
+             upVote(imageId)
              }} 
              value="Vote"> Vote
           </button>
         </aside>
         <aside className = "upVote">
-          {this.props.imageInfo.vote}
+          {imageInfo.vote}
         </aside>
       </section>
-    );
-  }
-}
+)
+
 
 export default Voting
