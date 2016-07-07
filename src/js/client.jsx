@@ -20,7 +20,7 @@ export const store = middlewareStore(appState);
 const history = browserHistory
 
 render(
-  <Provider store={store} >
+  <Provider store={store} history={history} >
     <App />
   </Provider>,
   document.getElementById('app')

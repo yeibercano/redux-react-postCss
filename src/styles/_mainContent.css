@@ -1,0 +1,48 @@
+/* MAIN */
+.mainTitle {
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    color: #1cba98;
+}
+
+/* PHOTO LIST */
+.photo-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+.photo-list-article{
+    width: 30%;
+}
+.photo-list-title {
+    text-align: center;
+    padding: 10px 0px;
+}
+.photo-list-images {
+    margin-top: 5px;
+    width: 100%;
+    /*border-radius: 5px 20px;*/
+    border-radius: 10px 10px 0px 0px;
+     /*with postCSS next*/
+
+    filter: grayscale(0.6); 
+    /*opacity: .6;*/
+    transform: scale(1);
+    transition: all .3s ease-in;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.photo-list-images:hover {
+      /*with postCSS next*/
+
+    filter: grayscale(0.1); 
+
+    /*opacity: 1;*/
+    cursor: pointer;
+    /*transform: scale(1.05);*/
+}
+
+
+
