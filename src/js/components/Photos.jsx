@@ -11,9 +11,9 @@ export default class Photos extends React.Component {
         <a href={'../images/' + imageInfo.filename}>
           <img className='photo-list-images' src={'../images/' + imageInfo.filename} /> 
         </a>
-        <Voting imageInfo = {imageInfo} imageId={id} />
-        <p>{imageInfo.synopsis}</p>
+        <p className="movies-description">{imageInfo.synopsis}</p>
       </article>
+       //<Voting imageInfo = {imageInfo} imageId={id} />
       // make this into photo-items component that renders the voting as well.
       // the login comes from main
       // should have click handler dispatch action to main 
