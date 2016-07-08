@@ -8,10 +8,17 @@ export default class Photos extends React.Component {
     return (
       <article className='photo-list-article' key={imageInfo.id}>
         <h2 className='photo-list-title'>{imageInfo.title}</h2>
-        <a href={'../images/' + imageInfo.filename}>
+        <a href="#fullSize">
           <img className='photo-list-images' src={'../images/' + imageInfo.filename} /> 
         </a>
-        <p className="movies-description">{imageInfo.synopsis}</p>
+
+        <div id="fullSize" className="fullSize">
+          <div>
+            <a href="#close" title="Close" className="close">X</a>
+            <img src={'../images/' + imageInfo.filename} /> 
+          </div>
+        </div>
+        <p>{imageInfo.synopsis}</p>
       </article>
        //<Voting imageInfo = {imageInfo} imageId={id} />
       // make this into photo-items component that renders the voting as well.
