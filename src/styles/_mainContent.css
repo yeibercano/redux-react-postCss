@@ -18,8 +18,10 @@
     width: 30%;
 }
 .photo-list-title {
-    text-align: center;
-    padding: 10px 0px;
+     text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 .photo-list-images {
     margin-top: 5px;
@@ -43,7 +45,6 @@
     cursor: pointer;
     /*transform: scale(1.05);*/
 }
-
 .movies-description {
    padding-top: 18px;
    font-size: calc(16px + 3 * ((100vw - 420px) / 860));
@@ -58,3 +59,50 @@
   margin-top: 20px;
 }
 
+/* MODAL */
+.fullSize {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.fullSize:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.fullSize > div {
+    width: 80%;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+
+    background: linear-gradient(#fff, #999);
+
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: rebeccapurple; }
