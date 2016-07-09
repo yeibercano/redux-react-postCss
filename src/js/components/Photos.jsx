@@ -13,10 +13,10 @@ export default class Photos extends React.Component {
         </a>
 
         <div id="fullSize" className="fullSize">
-          <div>
+         
             <a href="#close" title="Close" className="close">X</a>
             <img src={'../images/' + imageInfo.filename} /> 
-          </div>
+          
         </div>
         <p>{imageInfo.synopsis}</p>
       </article>
