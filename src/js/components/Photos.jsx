@@ -18,7 +18,7 @@ export default class Photos extends React.Component {
             <img src={'../images/' + imageInfo.filename} /> 
           
         </div>
-        <p>{imageInfo.synopsis}</p>
+        <p className="movies-description">{imageInfo.synopsis}</p>
       </article>
        //<Voting imageInfo = {imageInfo} imageId={id} />
       // make this into photo-items component that renders the voting as well.
