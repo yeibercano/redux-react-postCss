@@ -5,4 +5,5 @@ footer {
     /*height: $footer-height;*/
     /*position: fixed;*/
     width: 100%;   
+    color: white;
 }
