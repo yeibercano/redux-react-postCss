@@ -1,14 +1,12 @@
 import { connect } from 'react-redux';
-
-import React from 'react';
+import React, { Component } from 'react';
 import Photos from './Photos';
 import { getPhotos } from '../actions/index'
 
-class MainContent extends React.Component {
+class MainContent extends Component {
  
   componentWillMount() {
-    console.log('inside component')
-    this.props.dispatch(getPhotos())
+    this.props.getPhotos()
   }
 
   render() {
@@ -22,12 +20,10 @@ class MainContent extends React.Component {
 }
 
 function mapStateToProps (state) {
-  console.log('state mapTo',state)
   const allImg = state.list;
   return {
     allImg
   }
-
 }
 
-export default connect(mapStateToProps)(MainContent)
+export default connect(mapStateToProps, { getPhotos })(MainContent)
