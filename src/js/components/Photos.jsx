@@ -19,7 +19,6 @@ class Photos extends Component {
         <p className="movies-description">{imageInfo.synopsis}</p>
         <Voting imageInfo = {imageInfo} imageId={id} />
       </article>
-
     )
   }
   render() {
