@@ -4,9 +4,7 @@ import { upVote } from '../actions/index'
 
 class Voting extends Component {
 
- 
 render() {
-  console.log('imageInfo', this.props.imageInformation)
     return (
       <section>
         <aside>
