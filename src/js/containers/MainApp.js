@@ -7,8 +7,7 @@ import Footer from '../components/Footer';
 export default class App extends Component {
   render() {
     return (
-      <div style={{     "display": "flex",
-    "flex-direction": "column"}}>
+      <div>
        <Header/>
        <Main />
        <Footer />
