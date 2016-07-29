@@ -5,8 +5,6 @@ import { bindActionCreators } from 'redux';
 import * as appActions from '../actions/index';
 import MainApp from './MainApp.js';
 
-
-
 class MainContainer extends React.Component {
 
   render() {
@@ -15,7 +13,6 @@ class MainContainer extends React.Component {
     );
   }
 }
-
 
 function mapStateToProps(state) {
   return {
@@ -30,7 +27,6 @@ function mapDispatchToProps(dispatch) {
     }
   };
 }
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(MainContainer);
 
