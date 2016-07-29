@@ -1,10 +1,12 @@
-import React from 'react';
-import Voting from '../containers/Voting.js'
+import React, { Component } from 'react';
+import Voting from '../containers/Voting.js';
+import { connect } from 'react-redux';
+import { upVote } from '../actions/index'
 
-export default class Photos extends React.Component {
+class Photos extends Component {
 
   imageInfo(imageInfo, id) {
-    console.log('imageInfo, id', imageInfo, id)
+    // console.log('imageInfo, id', imageInfo, id)
     return (
       <article className='photo-list-article' key={imageInfo.id}>
         <h2 className='photo-list-title'>{imageInfo.title}</h2>
@@ -19,8 +21,8 @@ export default class Photos extends React.Component {
           
         </div>
         <p className="movies-description">{imageInfo.synopsis}</p>
+        <Voting imageInfo = {imageInfo} imageId={id} />
       </article>
-       //<Voting imageInfo = {imageInfo} imageId={id} />
       // make this into photo-items component that renders the voting as well.
       // the login comes from main
       // should have click handler dispatch action to main 
@@ -37,3 +39,6 @@ export default class Photos extends React.Component {
     );
   }
 }
+
+export default connect()(Photos);
+
