@@ -39,16 +39,12 @@ footer, header, hgroup, menu, nav, section {
 
 html {
     background: white;
-    box-sizing: border-box;
     height: 100%
 }
 body {
     font-family: "Raleway","Helvetica","Arial", "sans-serif";
     line-height: 1;
     font-size: calc(16px + 3 * ((100vw - 420px) / 860));
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
 }
 
 img {
@@ -62,9 +58,6 @@ main {
 ol, ul {
     list-style: none;
 }
-
-
-
 
 .container {
   margin: 0px auto;
@@ -83,4 +76,9 @@ a {
 #app {
   width: 100%;
   color: black;
+}
+.appWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
