@@ -14,7 +14,7 @@ class Photos extends Component {
         </a>
         <div id="fullSize" className="fullSize">
             <a href="#close" title="Close" className="close">X</a>
-            <img src={'../images/' + imageInfo.filename} /> 
+            <img className="fullSizeImg" src={'../images/' + imageInfo.filename} /> 
         </div>
         <p className="movies-description">{imageInfo.synopsis}</p>
         <Voting imageInfo = {imageInfo} imageId={id} />
