@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import * as appActions from '../actions/index';
 import MainApp from './MainApp.js';
 
-class MainContainer extends React.Component {
+class MainContainer extends Component {
 
   render() {
     return (
-        <MainApp {...this.props}/>
+      <MainApp {...this.props}/>
     );
   }
 }
