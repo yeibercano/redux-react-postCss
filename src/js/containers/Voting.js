@@ -4,7 +4,7 @@ import { upVote } from '../actions/index'
 
 class Voting extends Component {
 
-render() {
+  render() {
     return (
       <section>
         <aside>
