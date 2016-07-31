@@ -96,8 +96,13 @@ main {
 
 }
 
+.fullSizeImg {
+    top: 100px;
+    position: absolute;
+}
+
 .close {
-    background: #606061;
+   /* background: #606061;
     color: #FFFFFF;
     line-height: 25px;
     position: absolute;
@@ -108,7 +113,22 @@ main {
     text-decoration: none;
     font-weight: bold;
     border-radius: 12px;
+    box-shadow: 1px 1px 3px #000;*/
+  background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    top: 100px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
     box-shadow: 1px 1px 3px #000;
+    z-index: 1;
 }
 
 .close:hover { background: rebeccapurple; }
+
+
