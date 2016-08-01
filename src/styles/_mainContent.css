@@ -25,7 +25,7 @@ main {
 .photo-list-title {
     text-align: center;
     padding-bottom: 1em;
-    font-size: 1em;
+    font-size: calc(16px + 3 * ((100vw - 420px) / 860));
     text-transform: uppercase;
 }
 .photo-list-images {
@@ -132,4 +132,16 @@ main {
 
 .close:hover { background: rebeccapurple; }
 
+/* VOTING COMPONENT */
 
+.buttonVote {
+
+}
+
+.vote {
+
+}
+
+.voting {
+    
+}
