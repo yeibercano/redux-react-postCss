@@ -6,19 +6,14 @@ class Voting extends Component {
 
   render() {
     return (
-      <section>
-        <aside>
-          <button onClick = { e => {
-             e.preventDefault()
-             this.props.upVote(this.props.imageId)
-             }} 
-             value="Vote"> Vote
-          </button>
-        </aside>
-        <aside className = "upVote">
-          {this.props.imageInfo.vote}
-        </aside>
-      </section>
+      <aside className="voting">
+        <button className="buttonVote" onClick = { e => {
+           e.preventDefault()
+           this.props.upVote(this.props.imageId)
+           }} 
+          > Vote <span className="vote">{this.props.imageInfo.vote}</span>
+        </button>
+      </aside>
     )
   }     
 }
