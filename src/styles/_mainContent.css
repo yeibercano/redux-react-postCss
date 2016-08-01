@@ -59,6 +59,7 @@ main {
     flex: 1;
     padding-bottom: .5em;
     color: gray;
+    font-family: sans-serif;
 }
 
 .movies-description:hover {
@@ -140,7 +141,7 @@ main {
 /* VOTING COMPONENT */
 
 .buttonVote {
-
+  font-size: .8em;
 }
 
 .vote {
@@ -148,5 +149,6 @@ main {
 }
 
 .voting {
-
+  text-align: center;
+  padding-top: 5px;
 }
