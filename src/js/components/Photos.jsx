@@ -11,15 +11,16 @@ class Photos extends Component {
         <h2 className='photo-list-title'>{imageInfo.title}</h2>
         <a href="#fullSize">
           <img className='photo-list-images' src={'../images/' + imageInfo.filename} /> 
+          <Voting imageInfo = {imageInfo} imageId={id} />
         </a>
         <div id="fullSize" className="fullSize">
             <a href="#close" title="Close" className="close">X</a>
             <img className="fullSizeImg" src={'../images/' + imageInfo.filename} /> 
         </div>
         <p className="movies-description">{imageInfo.synopsis}</p>
-        <Voting imageInfo = {imageInfo} imageId={id} />
       </article>
     )
+        // <Voting imageInfo = {imageInfo} imageId={id} />
   }
   render() {
     return (
