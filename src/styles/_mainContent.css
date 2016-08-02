@@ -70,6 +70,7 @@ main {
   margin-top: 20px;*/
  
   /*border-left: 1px solid gray;*/
+  box-shadow: inset 0 4px 0 0 rebeccapurple;
 }
 
 /* MODAL */
