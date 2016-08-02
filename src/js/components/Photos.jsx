@@ -19,8 +19,7 @@ class Photos extends Component {
             <img className="fullSizeImg" src={'../images/' + imageInfo.filename} /> 
         </div>
       </article>
-    )
-        // <Voting imageInfo = {imageInfo} imageId={id} />
+    );
   }
   render() {
     return (
